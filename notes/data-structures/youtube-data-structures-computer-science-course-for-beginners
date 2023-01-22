@@ -1,0 +1,118 @@
+Data Structures
+
+YouTube
+freeCodeCamp.org
+Data Structures - Computer Science Course for Beginners
+https://www.youtube.com/watch?v=zg9ih6SVACc
+
+Definition
+> Data Structures: ways to manage data for easy access and modification
+> BigO Notation: metrics to measure the speed and efficiency
+    > Time Complexity Equations
+        > Measure the size of the data and the number of operations returned
+            * Time is not used because of the subjectivity of the hardware performance.
+            * This is not the absolute value for deciding which data structure to use 
+        > Always use the worst-case scenario
+    > Metrics
+        > Access
+        > Search
+        > Insert
+        > Delete 
+    > Examples(from best to worst)
+        > O(1): completes the task in one step
+        > O(log(n)): gets more efficient as the size of the data set increases
+        > O(n): completes the task in n steps
+        > O(n log n): gets less efficient as the size of the data set increases
+        > O(n^2): increases exponentially
+        > O(2^n): increases exponentially
+
+Overview
+> Arrays
+> ArrayLists
+> Stacks
+> Queues
+> LinkedLists
+> Doubly-LinkedLists
+> Dictionaries
+> Hash-Tables
+> Trees
+> Tries
+> Heaps
+> Graphs
+
+Arrays
+> Key features
+    > BigO Notation Access: 0(1)
+> Introduction
+    > Can be used to store anything
+    > Store values of the SAME type(integer, string, float, etc.)
+    > The size is FIXED and CAN'T be changed
+> 3 Attributes
+    > Name
+    > Type
+    > Size
+> Parallel Arrays
+    > Contain the same number of elements
+    > Have corresponding values in the same position
+    > Useful for storing different types of data about the same entity
+    > Examples
+        > Names["John Smith", "Gary Vee", "David Lee", "Adam Knox"]
+        > Salaries[10000, 12500, 8750, 15000]
+> 2 Ways to create
+    > Insert values right away(aware of values)
+        > Java
+            > int array[] = {1, 2, 3};
+        > Python
+            > array = [1, 2, 3]
+        > C#
+            > int[] array = {1, 2, 3};
+    > Set the size and insert elements later(not aware of values)
+        > Java
+            > int array[] = new int[10];
+        > Python: no need to set the size
+        > C#
+            > int[] array = new int[10];
+> Access and replace
+    > Use a numerical index
+        > An index starts at 0.
+    > Accessing example
+        > Numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        > Numbers[5] = 6
+        > Numbers[10] = array out of bounds error
+    > Replacing example
+        > Numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        > Numbers[9] = 11
+        > Numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11]
+> 2-Dimensional Arrays(Matrix)
+    > Access
+        > Require two indexes: column and row
+        > Example
+            > ["Steven", "Adam", "Sean", "Peter"]
+            > ["Alex", "Lucas", "Marcus", "Cam"]
+            > ["Dave", "Quniten", "Carl", "Anthony"]
+            > ["Jake", "John", "Jackson", "Ethan"]
+            > matrix[2, 3] = "Anthony"
+    > Life examples
+        > Chess
+        > Bingo
+        > Image(RGB)
+> BigO Notation
+    > Access: O(1)
+        > Know its final size and how much space is reserved
+    > Search: O(n)
+        > Work with unsorted arrays
+        > Must use linear search
+        > In the worst-case scenario, the value is the last element within the array.
+    > Insert: O(n)
+        > Must shift every element up one index to insert a new value
+    > Delete: O(n)
+        > Must shift every element down one index to delete a value
+> Pros and Cons
+    > Pros
+        > Good for storing similar contiguous data
+        > O(1) accessing power
+        > Very basic. Easy to learn and master
+    > Cons
+        > Size of the array cannot be changed once initialized
+        > Inserting and deleting are not efficient
+        > Can be wasting storage space
