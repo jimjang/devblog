@@ -119,3 +119,90 @@ Arrays
         > Size of the array cannot be changed once initialized
         > Inserting and deleting are not efficient
         > Can be wasting storage space
+
+ArrayLists
+> Key takeaways
+    > Arrays with a dynamic size
+    > ArrayLists can only store objects, whereas Arrays can store all data types. 
+    > ArrayLists store references on top of indexes. 
+> Introduction
+    > Growing Arrays
+    > Backed by Arrays with similar functionality
+    > The type of functionality varies among different languages.
+> Create
+    > The base size of an ArrayList is ten if you leave the parenthesis blank.
+    > Autoboxing
+        > ArrayLists hold objects, not primitive types(eg. 2)
+        > However, the computer will convert an integer into an integer object. 
+    > Formula
+        > Java
+            > ArrayList<Integer> arrayList = new ArrayList<Integer>();
+        > C#
+            > ArrayList arrayList = new ArrayList();        
+        > Python
+            * Arrays and ArrayLists are called lists with partially both functionalities.
+> 5 differences between Arrays and ArrayLists
+    > Arrays
+        > Fixed Size
+        > Can store all data types
+        > Needs to create methods
+        > Doesn't require much memory use or upkeep
+        > Ideal for smaller tasks without much change
+    > ArrayLists
+        > Dynamic Size
+        > Can only store objects
+        > Comes with pre-built methods
+        > Requires more memory use and upkeep
+        > Ideal for more interactive programs
+> 6 common methods
+    > Add
+        > Add(object): adds the element to the end of the ArrayList
+            > ArrayList exampleAList = new ArrayList(4);
+                > [ , , , ]
+            > exampleAList.add(2);
+                > [2, , , ]
+            > exampleAList.add(5);
+                > [2, 5, , ]
+        > Add(object, index): adds the element at the index and shifts other elements to the right
+            > exampleAList.add(1, 0);
+                > [1, 2, 5, ]
+            > exampleAList.add(3, 2);
+                > [1, 2, 3, 5]
+    > Remove
+        > Remove(index): removes the object at the index
+            > to remove '5' from [1, 2, 3, 5]
+                > exampleAList.remove(3)
+        > Remove(object): removes the first instance of the object
+            > to remove '5' from [1, 2, 3, 5]
+                > exampleAList.remove(new Integer(5));
+    > Get
+        > Get(index): returns the object
+            > [1, 2, 3, 5]
+            > exampleAList.get(0);
+                > 1
+            > exampleAList.get(2);
+                > 3
+    > Set
+        > Set(index, object): replaces the object
+            > [1, 2, 3, 5]
+            > exampleAList.set(3, 4);
+                > [1, 2, 3, 4]
+    > Clear
+        > clear(): deletes every element in the ArrayList
+            > exampleAList.clear();
+                > [ , , , , ]
+    > toArray
+        > toArray(): converts the ArrayList into an Array
+            > Object convertedExample[] = exampleAList.toArray();
+> BigO Notation: same as Arrays
+    > Access: O(1)
+        > ArrayLists store references on top of indexes. 
+        > With a get method, you can instantly access data even though they are not stored contiguously.  
+    > Search: O(n)
+        > Work with unsorted arrays
+        > Must use linear search
+        > In the worst-case scenario, the value is the last element within the array.
+    > Insert: O(n)
+        > Must shift every element up one index to insert a new value
+    > Delete: O(n)
+        > Must shift every element down one index to delete a value
