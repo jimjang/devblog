@@ -41,11 +41,21 @@ Overview
 > Graphs
 
 Arrays
-> Key takeaways
-    > Store values of the same type without a change in size
-    > Uses a numeric index
-    > Fast access
-        * BigO Notation Access: 0(1)    
+> Summary
+    > Key takeaways
+        > Store values of the same type without a change in size
+        > Uses a numeric index
+        > Fast access
+            * BigO Notation Access: 0(1)
+    > Real-life examples
+        > Spam, plagiarism, spelling error detection
+        > Search engine
+        > Online ticket booking(flight, train, theater, etc.)
+            * seats [3][4]
+        > Image processing(RGB)
+        > Contacts 
+        > Leaderboards
+        > String and matrix
 > Introduction
     > Can be used to store anything
     > Store values of the SAME type(integer, string, float, etc.)
