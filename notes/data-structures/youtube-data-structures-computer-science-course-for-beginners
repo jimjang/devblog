@@ -216,3 +216,49 @@ ArrayLists
         > Must shift every element up one index to insert a new value
     > Delete: O(n)
         > Must shift every element down one index to delete a value
+
+Stacks
+> Summary
+    > Key Takeaways
+        > LIFO
+        > BigO Notation
+            > Access/Search: O(n)
+            > Insert/Delete: O(1)
+    > Real-life Examples
+        > Browser's previous and next buttons
+        > Undo and redo functions
+        > History of visited sites
+        > Call and message logs
+        > Recursion algorithm
+> Introduction
+    > Stacks are sequential access data structures, meaning no instant access.
+        > Each element is dependent on the others with particular orders.
+        > Arrays and ArrayLists are random access data structures that provide instant access.
+    > Last in First Out(LIFO)
+        > When you grab a book in a pile of books, you take out the top(last/latest) one first.
+        > Easy to visualize vertically
+> 4 Common Methods
+    > Push
+        > Push(object): pushes an element onto the top of the Stacks
+            * exampleStack.push("this")
+    > Pop
+        > Pop(): removes an element from the top of the Stack
+            * exampleStack.pop()
+    > Peek
+        > Peek(): returns the top value without removing it
+            * exampleStack.peek()
+    > Contains
+        > Contains(object): searches through the Stack and returns a Boolean value
+            > exampleStack.contains("this")
+                > True
+            > exampleStack.contains("hello")
+                > functionalities
+> BigO Notation
+    > Access: O(n)
+        > To get to the bottom book in a pile, you take the rest of the pile off.
+    > Search: O(n)
+        > To find the bottom book in a pile, you go through the rest.
+    > Insert: O(1)
+        > Because data only flows from the top, you can insert it instantly.
+    > Delete: O(1)
+        > Because data only flows from the top, you can delete it instantly.
