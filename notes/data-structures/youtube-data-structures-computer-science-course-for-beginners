@@ -221,6 +221,7 @@ Stacks
 > Summary
     > Key Takeaways
         > LIFO
+        > Inserting and deleting data occur at a single point.
         > BigO Notation
             > Access/Search: O(n)
             > Insert/Delete: O(1)
@@ -234,7 +235,7 @@ Stacks
     > Stacks are sequential access data structures, meaning no instant access.
         > Each element is dependent on the others with particular orders.
         > Arrays and ArrayLists are random access data structures that provide instant access.
-    > Last in First Out(LIFO)
+    > Last In First Out(LIFO)
         > When you grab a book in a pile of books, you take out the top(last/latest) one first.
         > Easy to visualize vertically
 > 4 Common Methods
@@ -252,12 +253,12 @@ Stacks
             > exampleStack.contains("this")
                 > True
             > exampleStack.contains("hello")
-                > functionalities
+                > False
 > BigO Notation
     > Access: O(n)
-        > To get to the bottom book in a pile, you take the rest of the pile off.
+        > To get to the bottom book in a pile, you must take the rest of the pile off.
     > Search: O(n)
-        > To find the bottom book in a pile, you go through the rest.
+        > To find the bottom book in a pile, you must go through the rest.
     > Insert: O(1)
         > Because data only flows from the top, you can insert it instantly.
     > Delete: O(1)
