@@ -263,3 +263,52 @@ Stacks
         > Because data only flows from the top, you can insert it instantly.
     > Delete: O(1)
         > Because data only flows from the top, you can delete it instantly.
+
+Queues
+> Summary
+    > Key Takeaways
+        > FIFO
+        > Inserting and deleting data occur at a single point.
+        > BigO Notation
+            > Access/Search: O(n)
+            > Insert/Delete: O(1)
+    > Real-life Examples
+        > Waiting in line
+        > Job scheduling
+        > Sending an email
+        > Uploading and downloading
+        > Sorting algorithms
+> Introduction
+    > Stacks are also sequential access data structures, meaning no instant access.
+        > Each element is dependent on the others with particular orders.
+        > Arrays and ArrayLists are random access data structures that provide instant access.
+    > First In First Out(FIFO)
+        > First added element gets removed first. 
+        > When you are standing in a line, the first person in the line will enter first.
+        > Easy to visualize horizontally
+        > You remove data from the front and add it to the back.
+> 4 Common Methods
+    > Enqueue
+        > Enqueue(object): adds an element to the tail of the Queue
+            * exampleQueue.enqueue("now")
+    > Dequeue
+        > Dequeue(): removes an element from the head of the Queue
+            * exampleQueue.dequeue()
+    > Peek
+        > Peek(): returns the forefront object of the Queue without removing it
+            * exampleQueue.peek()
+    > Contains
+        > Contains(object): searches through the Queue and returns a Boolean value
+            > exampleQueue.contains("now")
+                > True
+            > exampleQueue.contains("hello")
+                > False
+> BigO Notation
+    > Access: O(n)
+        > To get to the last person(tail) in line, you must go through everyone in front.
+    > Search: O(n)
+        > To find the last person(tail) in line, you must check everyone in front.
+    > Insert: O(1)
+        > Because data comes in at the front, you can insert it instantly.
+    > Delete: O(1)
+        > Because data gets out at the back, you can delete it instantly.
