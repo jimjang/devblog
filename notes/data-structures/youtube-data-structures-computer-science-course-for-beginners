@@ -312,3 +312,53 @@ Queues
         > Because data comes in at the front, you can insert it instantly.
     > Delete: O(1)
         > Because data gets out at the back, you can delete it instantly.
+
+LinkedLists
+> Summary
+    > Key Takeaways
+        > A node contains two parts: data and reference(pointer).
+        > You can use LinkedLists to make other data strucutures(Stacks, Queues, etc.).
+        > You can add or remove data anywhere, unlike Stacks and Queues.
+        > You can only go forward with pointers, not backward.
+        > BigO Notation
+            > Access/Search: O(n)
+            > Insert/Delete: either O(n) or O(1)        
+    > Real-life Examples
+        > A queue on Spotify(one way)
+        > Photo viewing software(one way)
+> Introduction
+    > LinkedLists are also sequential access linear data structures.
+    > Each element is a separate object, a node with two parts.
+        > Data
+        > Reference(pointer): points to the next node
+            * The last node(tail) points toward a null value.
+    > You can add or remove data anywhere, unlike Stacks and Queues.
+    > You can add multiple attributes or variables, unlike Arrays and ArrayLists.    
+    > You can use LinkedLists to make other data structures(Stacks, Queues, etc.).
+    > You can only go forward with pointers, not backward.
+> Add
+    > Add to the head
+        > Make the new node point to the current head node
+    > Add to the middle
+        > Make the new node point to the next node
+        > Make the previous node point to the new node
+    > Add to the tail
+        > Make the current tail node point toward the new node
+> Remove
+    > Remove from the head
+        > Make the head node point to a null value
+    > Remove from the middle
+        > Make the previous node point toward the next node
+    > Remove from the tail
+        > Make the previous tail node point to a null value           
+> BigO Notation
+    > Access: O(n)
+        > Sequential data structures: must go through all the data
+    > Search: O(n)
+        > Sequential data structures: must go through all the data
+    > Insert: either O(n) or O(1)
+        > Inserting in the middle: O(n)
+        > Inserting either in the head or the tail: O(1)
+    > Delete: either O(n) or O(1)
+        > Deleting in the middle: O(n)
+        > Deleting either in the head or the tail: O(1)
