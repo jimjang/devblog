@@ -362,3 +362,78 @@ LinkedLists
     > Delete: either O(n) or O(1)
         > Deleting in the middle: O(n)
         > Deleting either in the head or the tail: O(1)
+
+Doubly Linked Lists
+> Summary
+    > Key Takeaways
+        > A node contains three parts.
+            > Data
+            > Previous pointer
+            > Next pointer
+        > You can use Doubly Linked Lists for Stack-like functionality.
+        > You can go forward and backward with pointers, unlike Linked Lists.
+        > BigO Notation
+            > Access/Search: O(n)
+            > Insert/Delete: either O(n) or O(1)        
+    > Real-life Examples
+        > Music playlist
+        > Browser's back-and-forth function
+        > Open recent function
+        > 'Alt + tab'
+> Introduction
+    > Doubly Linked Lists are also sequential access linear data structures.
+    > You can go forward and backward with pointers, unlike Linked Lists.
+    > Each element is a separate object, a node with three parts.
+        > Data
+        > Previous pointer
+        > Next pointer
+> Components
+    > Initial Node(head/tail)
+        > Previous pointer: null
+        > Next pointer: null
+    > New Node
+        > Head Node
+            > Previous pointer: null
+            > Next pointer: next node
+        > Middle
+            > Previous pointer: previous node
+            > Next pointer: next node
+        > Tail Node
+            > Previous pointer: previous node
+            > Next pointer: null
+> Add
+    > Add to the head
+        > Set the next pointer of the new head node point toward the old head node
+        > Set the previous pointer of the new head node point to null
+        > Set the previous pointer of the old head node point toward the new head node
+    > Add to the middle
+        > Set the previous pointer of the new node point toward the previous node
+        > Set the next pointer of the new node point toward the next node
+        > Set the next pointer of the previous node point toward the new node
+        > Set the previous pointer of the next node point toward the new node
+    > Add to the tail
+        > Set the next pointer of the old tail node point toward the new tail node
+        > Set the previous pointer of the new tail node point toward the old tail node
+        > Set the next pointer of the new tail node to null
+> Remove
+    > Remove from the head
+        > Set the next pointer of the removed head node point to null
+        > Set the previous pointer of the new head node point to null
+    > Remove from the middle
+        > Set the next pointer of the previous node point toward the next node
+        > Set the previous pointer of the next node point toward the previous node
+        > Set both pointers of the removed node to null
+    > Remove from the tail
+        > Set the previous pointer of the removed tail node point to null
+        > Set the next pointer of the new tail node point to null
+> BigO Notation
+    > Access: O(n)
+        > Sequential data structures: must go through all the data
+    > Search: O(n)
+        > Sequential data structures: must go through all the data
+    > Insert: either O(n) or O(1)
+        > Inserting in the middle: O(n)
+        > Inserting either in the head or the tail: O(1)
+    > Delete: either O(n) or O(1)
+        > Deleting in the middle: O(n)
+        > Deleting either in the head or the tail: O(1)
