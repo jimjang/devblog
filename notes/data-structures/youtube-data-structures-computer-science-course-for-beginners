@@ -437,3 +437,40 @@ Doubly Linked Lists
     > Delete: either O(n) or O(1)
         > Deleting in the middle: O(n)
         > Deleting either in the head or the tail: O(1)
+
+Dictionaries
+> Summary
+    > Key Takeaways
+        > Reasons to use
+            > Option for non-numerical indexes
+            > Flexibility in making keys
+            > BigO Notation(Average Time Complexity Equations): O(1)
+        > Two restrictions
+            > Every key can only appear once within the dictionary.
+            > Each key can only have one value.    
+    > Real-life Examples
+        > Social security number
+        > Social media feeds
+        > Passwords
+> Introduction
+    > One of the most abstract data structures
+    > Also called Maps or Associative Arrays
+    > Store data with keys instead of a numerical index
+        * Keys can be any primitive data type(string, boolean, dictionary, etc.).
+    > Two restrictions
+        > Every key can only appear once within the dictionary.
+        > Each key can only have one value.
+> Hash Table
+    > Hash Function: takes all the keys and strategically maps them to certain index locations
+        > Key       : [1, 10, 100, 1K, 10K, 100K, 1M, 10M, 100M, 1B]
+        > Function  : Key / key * (number of digits - 1)
+        > Index     : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    > Hash Collision: run two different keys into a hash function, resulting in one index location
+        > Open Addressing: puts the key in some other index location like the next nil value
+        > Closed Addressing
+            > Uses Linked Lists to chain together keys with the same hash values
+            > Drawback: must go through the Linked List to find the right value
+> BigO Notation(Average Time Complexity Equations)
+    > Access/Search/Insert/Delete: O(1)
+> BigO Notation(Time Complexity Equations)
+    > Access/Search/Insert/Delete: O(n)
