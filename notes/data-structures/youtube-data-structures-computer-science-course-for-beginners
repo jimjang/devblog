@@ -474,3 +474,49 @@ Dictionaries
     > Access/Search/Insert/Delete: O(1)
 > BigO Notation(Time Complexity Equations)
     > Access/Search/Insert/Delete: O(n)
+
+Trees
+> Summary
+    > Key Takeaways
+        > Hierarchical data structures as opposed to linear
+        > Each node can point towards multiple nodes, unlike Linked Lists.
+        > Advantages of Binary Search Trees
+            > Can search in logarithmic time
+            > Great for storing large quantities of data with easy accessibility and modification 
+    > Real-life Examples
+        > Family tree
+        > File structure(folders and files)
+        > Company structure
+> Introduction
+    > Trees are hierarchical data structures as opposed to linear.
+    > Contain a series of multiple linked nodes
+    > Each node can point towards multiple nodes.
+        * A node of a Linked List can only point to a single node.
+> Terminology
+    > Property of a node
+        > Vertice: a node in a Tree
+        > Edge: a connection between nodes
+        > Root node: the topmost node of a Tree
+        > Child node: a connected node having one level above itself
+        > Parent node: a node having one or more child nodes
+        > Leaf node: a node without child nodes
+        > Depth: the number of edges to get to the root node
+    > Property of the Tree
+        > Height: the greatest number of edges toward a leaf node
+> Different types of Trees
+    > Binary Search Tree
+    > AVL Tree
+    > Red-Black Tree
+    > N-ary Tree
+> Binary Search Tree
+    > Advantages
+        > Can search in logarithmic time
+            > Go left if the value is less than the current node
+            > Go right if the value is greater than the current node
+        > Great for storing large quantities of data with easy accessibility and modification
+    > Restrictions
+        > A node can have two children at the most.
+        > For any given parent node:
+            > The left child's value is smaller.
+            > The right child's value is bigger.
+        > Two nodes cannot contain the same value. 
