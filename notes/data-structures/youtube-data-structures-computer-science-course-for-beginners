@@ -520,3 +520,33 @@ Trees
             > The left child's value is smaller.
             > The right child's value is bigger.
         > Two nodes cannot contain the same value. 
+
+Tries
+> Summary
+    > Key Takeaways
+        > Tree-like data structures, also called Digital Trees
+        > Often underrated and only used in certain situations
+        > Nodes store letters of an alphabet in the form of characters.
+        > Quickly retrieve words in the form of strings by traversing down a path of the Trie 
+    > Real-life Examples
+        > Auto-complete
+        > Spell check
+> Terminology
+    > Flagging: points toward a flag to mark the end of a word
+> Example
+    > D
+        > A
+            > D
+                > .(Dad)
+                > D
+                    > Y
+                        > .(Daddy)
+        > E
+            > N
+                > .(Den)
+                > V
+                    > E
+                        > R
+                            > .(Denver)
+            > W
+                > .(Dew)
