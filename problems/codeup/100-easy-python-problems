@@ -480,3 +480,15 @@
 # quo = int(a) // int(b)
 
 # print(quo)
+
+
+# 041 [기초-산술연산] 정수 2개 입력받아 나눈 나머지 계산하기
+
+# 정수 2개(a, b) 를 입력받아 a를 b로 나눈 나머지를 출력해보자.
+
+# <정답>
+# a, b = input().split()
+
+# rem = int(a) % int(b)
+
+# print(rem)
