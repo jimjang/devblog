@@ -550,3 +550,48 @@ Tries
                             > .(Denver)
             > W
                 > .(Dew)
+
+Heaps
+> Summary
+    > Key Takeaways
+        > Trees with a special relationship between parent and child nodes
+        > Types
+            > Min-Heaps
+            > Max-Heaps
+    > Real-life Examples
+        > Emergency Room
+        > Heap Sort
+        > Priority Queue
+        > Largest and smallest functions
+        > Security system
+        > Greedy algorithm
+        > Dynamic programming
+        > Backtracking
+> Introduction
+    > Trees with a special relationship between parent and child nodes
+        > Either greater than or less than the parent node
+        > Determines where the data is stored
+        > Usually dependent on the parent node's value
+> Types
+    > Min-Heaps
+        > The root node must be the minimum among all of its children.
+        > The same principle applies to all parent nodes.
+    > Max-Heaps
+        > The root node must be the maximum among all of its children.
+        > The same principle applies to all parent nodes.
+> Building Heaps
+    > Add the first integer as the root node
+    > Add another node as the child of the root node to the left
+    > Recursively go up the tree and swap nodes if necessary
+        * Either greater than or less than the node above it
+    > Repeat steps 2 and 3 until finished
+> Deleting from Heaps
+    > Remove the root node
+    > Replace it with the node furthest to the right
+    > "Heapify" by comparing parent nodes to their children and by swapping nodes if necessary
+> Implementations
+    > Heap Sort
+        > Takes in a list of elements
+        > Builds them into a min or max heap
+        > Removes the root node continuously to make a sorted list
+    > Priority Queues: designated tasks and assign computer power based on the urgency
