@@ -693,3 +693,20 @@
 #     print("True")
 # else:
 #     print("False")
+
+
+# 055 [기초-논리연산] 하나라도 참이면 참 출력하기
+
+# 2개의 정수값이 입력될 때,
+# 그 불 값이 하나라도 True 일 때에만 True 를 출력하는 프로그램을 작성해보자.
+
+# 하나라도 참일 경우 True 를 출력하고, 그 외의 경우에는 False 를 출력한다.
+
+# <정답>
+# a, b = input().split()
+# a, b = int(a), int(b)
+
+# if bool(a) == True or bool(b) == True:
+#     print("True")	
+# else:
+#     print("False")
