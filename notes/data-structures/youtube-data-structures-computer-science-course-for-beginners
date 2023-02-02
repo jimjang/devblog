@@ -600,3 +600,48 @@ Heaps
         > Builds them into a min or max heap
         > Removes the root node continuously to make a sorted list
     > Priority Queues: designated tasks and assign computer power based on the urgency
+
+Graphs
+> Summary
+    > Key Takeaways
+        > Types
+            > Directed vs. Undirected
+            > Weighted vs. Unweighted
+            > Cyclic vs. Acyclic
+    > Real-life Examples
+        > Weighted, undirected, and cyclical
+            > Navigation
+            > IP routing
+            > Telephone networks
+        > Unweighted, undirected, and cyclical
+            > Social Network friendship
+        > Unweighted, directed, and cyclical
+            > Social Network follow
+> Introduction
+    > Nonlinear data structures with nodes and edges
+    > Come together to form a visualization of data
+    > Difference between Graphs and Trees
+        > Graphs: multiple starting points        
+        > Trees: a specific starting point(the root node)
+    > Notation: {(6, 4), (4, 5), (4, 3), (3, 2), (5, 2), (2, 1), (5, 1)}
+> Directed vs. Undirected
+    > Directed: The direction is important, with arrows pointing either way or both ways.
+    > Undirected: The direction is not important with no arrows.
+> Cyclic vs. Acyclic
+    > Cyclic
+        > Contains a path back to itself
+        > All undirected Graphs are cyclical.
+    > Acyclic
+        > Contains no path back to itself
+> Weighted vs. Unweighted
+    > Weighted
+        > Edges with numerical values
+        > Each weight represents some property of the information.
+    > Unweighted
+        > Edges with no numerical values
+> Popular types of Graphs
+    > Unweighted, undirected, and cyclical
+        > Dijkstra's shortest path algorithm
+        > Compiles a list of the shortest possible paths
+    > Unweighted Cyclical(undirected and directed)
+        * Social Network Sites: Facebook, Snapchat, Instagram, Twitter, etc.
