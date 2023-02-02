@@ -676,3 +676,20 @@
 # a = bool(not a)
 
 # print(a)
+
+
+# 054 [기초-논리연산] 둘 다 참일 경우만 참 출력하기
+
+# 2개의 정수값이 입력될 때,
+# 그 불 값이 모두 True 일 때에만 True 를 출력하는 프로그램을 작성해보자.
+
+# 둘 다 True 일 경우에만 True 를 출력하고, 그 외의 경우에는 False 를 출력한다.
+
+# <정답>
+# a, b = input().split()
+# a, b = int(a), int(b)
+
+# if bool(a) == True and bool(b) == True:
+#     print("True")
+# else:
+#     print("False")
