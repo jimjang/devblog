@@ -31,8 +31,8 @@ Overview
 > ArrayLists
 > Stacks
 > Queues
-> LinkedLists
-> Doubly-LinkedLists
+> Linked Lists
+> Doubly Linked Lists
 > Dictionaries
 > Hash-Tables
 > Trees
@@ -313,11 +313,11 @@ Queues
     > Delete: O(1)
         > Because data gets out at the back, you can delete it instantly.
 
-LinkedLists
+Linked Lists
 > Summary
     > Key Takeaways
         > A node contains two parts: data and reference(pointer).
-        > You can use LinkedLists to make other data strucutures(Stacks, Queues, etc.).
+        > You can use Linked Lists to make other data strucutures(Stacks, Queues, etc.).
         > You can add or remove data anywhere, unlike Stacks and Queues.
         > You can only go forward with pointers, not backward.
         > BigO Notation
@@ -327,14 +327,14 @@ LinkedLists
         > A queue on Spotify(one way)
         > Photo viewing software(one way)
 > Introduction
-    > LinkedLists are also sequential access linear data structures.
+    > Linked Lists are also sequential access linear data structures.
     > Each element is a separate object, a node with two parts.
         > Data
         > Reference(pointer): points to the next node
             * The last node(tail) points toward a null value.
     > You can add or remove data anywhere, unlike Stacks and Queues.
     > You can add multiple attributes or variables, unlike Arrays and ArrayLists.    
-    > You can use LinkedLists to make other data structures(Stacks, Queues, etc.).
+    > You can use Linked Lists to make other data structures(Stacks, Queues, etc.).
     > You can only go forward with pointers, not backward.
 > Add
     > Add to the head
