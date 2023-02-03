@@ -61,3 +61,14 @@
 
 # <Answer>
 # print(0.01 * (2 ** 30))
+
+
+# 008-2 I Code
+
+# Strings
+
+# Fix the given code to output I'm a programmer.
+# print('I'm a programmer')
+
+# <Answer>
+# print('I\'m a programmer')
