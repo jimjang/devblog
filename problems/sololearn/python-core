@@ -72,3 +72,28 @@
 
 # <Answer>
 # print('I\'m a programmer')
+
+
+# 009-2 More Lines, More Better
+
+# Newlines in Strings
+
+# Working with strings is an essential programming skill.
+
+# Task
+# The given code outputs A B C D (each letter is separated by a space).
+# print('A B C D')
+
+# Modify the code to output each letter on a separate line, resulting in the following output:
+# A
+# B
+# C
+# D
+
+# <Answer>
+# string = 'A B C D'
+
+# x = string.split()
+
+# for i in range(len(x)):
+#     print(x[i])
