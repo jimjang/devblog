@@ -12,3 +12,22 @@
 
 # <Answer>
 # print("Python is fun")
+
+
+# 002-2 Brain Freeze!
+
+# Simple Operations
+
+# Today is a holiday at the children's camp, so all the children will be served ice cream.
+# There are 68 children in the group, and each child should get 2 scoops of ice cream.
+
+# Task
+# Write a program to calculate and output the total number of ice cream scoops we need.
+
+# <Answer>
+# children = 68
+# scoops = 2
+
+# total = children * scoops
+
+# print(total)
