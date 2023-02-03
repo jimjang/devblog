@@ -27,18 +27,22 @@ Definition
         > O(2^n): increases exponentially
 
 Overview
-> Arrays
-> ArrayLists
-> Stacks
-> Queues
-> Linked Lists
-> Doubly Linked Lists
-> Dictionaries
-> Hash-Tables
-> Trees
-> Tries
-> Heaps
-> Graphs
+> Linear
+	> Random Access
+		> Arrays
+		> ArrayLists
+	> Sequential Access
+		> Stacks
+		> Queues
+		> Linked Lists
+		> Doubly Linked Lists
+	> Abstract
+		> Dictionaries(Maps, Associative Arrays)
+> Non-linear
+	> Trees
+	> Tries
+	> Heaps
+	> Graphs
 
 Arrays
 > Summary
