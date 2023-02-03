@@ -67,3 +67,119 @@ Basic Concepts
         > print(100 // 42)
     > Drag & drop from the options below to produce code that output 10 raised to the 5th power.
         > print(10 ** 5)
+
+Strings & Variables
+> Strings
+    > print("Hello World") and print('Hello World')
+        > Hello World
+    > print('He\'s a coder') and print("He's a coder")
+        > He's a coder
+        * Use \ to use ' inside quotations
+    > print("Spam", "in", "brain", sep = '+', end = '!')
+        > Spam+in+brain!
+    > print('''He's saying "Help!"''')
+        > He's saying "Help!"
+    > "Hello World" and 'Hello World'
+        > 'Hello World'
+    > a = print('I love python')
+        > I love python
+      print(a)
+        > none
+    > a = 'I love python'
+        > I love python
+      print(a)
+        > I love python
+        * The value of the first a is none, and the value of the second a is a string.
+> Backslashes
+    > Used to escape quotations, tabs, and unprintable others
+        > \': '
+        > \": "
+        > \t: tab
+        > \n: new line
+        > \r: carriage return
+        > \r\n: carriage return + new line
+        > \v: line tabulation
+        > \u2028: line separator(Unicode)
+        > \\: single backslash
+        > \\\: double backslash
+> Newlines
+    > \n: new line
+    > \t: tab
+    > print('One\nTwo\nThree')
+        > One
+          Two
+          Three
+    > print("""Hello
+            My name is Python
+            Nice to meet you""")
+        > Hello
+          My name is Python
+          Nice to meet you
+    > print("this", "is", "a multi", "line sentence", sep = '\n')
+        > this
+          is
+          a multi
+          line sentence
+> Concatenation
+    > print("Spam" + 'eggs') -> Spameggs
+    > print(str(Spam) + str(eggs)) -> Spameggs
+    > print("Spam", "eggs") -> Spam eggs
+    > print("2" + "2") -> 22
+    > Adding a string to a number -> error
+    > start = 'abc'
+      end = 'pple'
+      for letter in start:
+        print(letter + end)
+        > apple
+          bpple
+          cpple
+> String Operations
+    > Can be multiplied by integers but not by strings and floats
+        > print("spam" * 3)
+            > spamspamspam
+        > print(4 * '2')
+            > 2222
+> Variables
+    > user = "James"
+    > a, b = 0, 1
+      a, b = b, a + b
+      print(a)
+      print(b)
+        > 1
+          1
+        * sequence unpacking
+    > a, b = 0, 1
+      a = b
+      b = a + b
+      print(a)
+      print(b)
+        > 1
+          2        
+> Variable Names
+    > Letters, numbers, and underscores
+    > Can't start with numbers
+    > Case sensitive
+> Working with Variables
+    * Different data types can have the same variable, but it is not a good practice.
+> Input
+    > Prompts the user for an input and returns it as a string.
+    > While the input() function runs, the program flow stops until the user enters some value.
+    > name = input("What's your name?")
+    > age = int(input("What's your age?")) -> 42
+      print("His age is " + str(age)) or print("His age is ", age)
+        > His age is 42
+> In-Place Operators
+    > x = x + 3 or x += 3
+    > k = "spam"
+      k += "eggs"
+      print(k)
+        > spameggs
+    > k = "spam"
+      y = 5
+      k *= y
+      print(k)
+        > spamspamspam
+> Walrus operator
+    > num = int(input())
+      print(num) or print(num := int(input()))
+    > print('Are you sure you are', num := int(input('How old are you?)), 'years old?')
