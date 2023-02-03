@@ -97,3 +97,23 @@
 
 # for i in range(len(x)):
 #     print(x[i])
+
+
+# 010-2 String Operations
+
+# String Operations
+
+# The provided code outputs the string "ni".
+# print("ni")
+
+# Task:
+# Modify the code to output the string repeated 3 times,
+# and add an ! (exclamation mark) at the end of the output.
+
+# <Answer>
+# s = "ni"
+# n = 3
+
+# output = s * n
+
+# print(output, end = '!')
