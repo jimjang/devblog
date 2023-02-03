@@ -31,3 +31,14 @@
 # total = children * scoops
 
 # print(total)
+
+
+# 005-2 How Many Miles?
+
+# Quotient
+
+# Calculate and output the number of miles in 1000 kilometers.
+
+# <Answer>
+# # 1 kilometer = 1.6 miles
+# print(1000 // 1.6)
